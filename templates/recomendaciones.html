@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendaciones para {{ sexo }}</title>
+</head>
+<body>
+    <h1>Recomendaciones de Productos para {{ sexo }}</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>Producto ID: {{ producto }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
