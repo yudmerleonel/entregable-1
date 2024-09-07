@@ -5,6 +5,9 @@
     <title>Página de Inicio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,5 +29,46 @@
           </ul>
         </div>
       </nav>
+      <!-- cuerpo de mi pagina -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://scontent.flim1-2.fna.fbcdn.net/v/t39.30808-6/458733425_507891465322002_1970736800309750639_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEaB3P6z7H7nmfSywVSVcaG3Nx4Bvs8UZLc3HgG-zxRkvYvNDccy0tjM2ewUoP0B7PBLxUx0xS6wIRKpC5lPdsd&_nc_ohc=uTgsm-ZGzC8Q7kNvgH8YAZe&_nc_ht=scontent.flim1-2.fna&oh=00_AYDbzw1JoNzCwLnYz179R1q5NBKXS2dcJiNGu3wJwz4Uow&oe=66E2B46F" class="d-block w-100" alt="Oferta de tecnología">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ofertas en Tecnología</h5>
+                    <p>Descubre las mejores ofertas en smartphones, laptops y más. ¡Aprovecha hasta 50% de descuento!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://scontent.flim1-2.fna.fbcdn.net/v/t39.30808-6/458653277_507886858655796_6278990715188949946_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGE6-5-ZAad_BE1RMMpjGtBNjS3S2wJOOQ2NLdLbAk45NN19Rl9_we2F5JJFHaAzlyWYLYym0kguUnB2VLwkmo2&_nc_ohc=jgP2SvWyOfAQ7kNvgGUQxos&_nc_ht=scontent.flim1-2.fna&_nc_gid=A9xq-KvZ-jhGMOh5w-Qnct2&oh=00_AYDFjBFIuDoaGYlL_nbN9Ah7e95qWzuic09p2qrwPRTrpg&oe=66E2A07E" class="d-block w-100" alt="Moda para todos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Moda para Todos</h5>
+                    <p>Encuentra las últimas tendencias en ropa y accesorios. ¡Viste a la moda a precios increíbles!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://scontent.flim1-1.fna.fbcdn.net/v/t39.30808-6/459032403_507888495322299_8584880862531414563_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGExM2_md3FSKpwJnYpDnpcRxYUHeo2UZRHFhQd6jZRlEmQ73XV9wZefEdIvlO0-gdoDv7xFFtdo9UJBjDHOPJ2&_nc_ohc=8ETvnEGV6jIQ7kNvgGF-XX2&_nc_ht=scontent.flim1-1.fna&_nc_gid=A9eQ_sCzdz7TJEPK2OikYMP&oh=00_AYClFAPjuh7fuA7ImIP18Cy16nB4cvbDXqMV0jcaO4zKmA&oe=66E2A21C" class="d-block w-100" alt="Hogar y Decoración">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hogar y Decoración</h5>
+                    <p>Renueva tu hogar con nuestros productos de decoración. ¡Estilo y confort a tu alcance!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+    
+
 </body>
 </html>
