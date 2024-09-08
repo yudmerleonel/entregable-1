@@ -57,3 +57,53 @@
     font-size: 0.9em;
     color: #555;
 }
+/* Encabezado */
+/* Estilo para el fondo del navbar */
+.bg-saga {
+    background-color: #004d38; /* Verde oscuro de Saga Falabella */
+}
+
+/* Estilo de los enlaces del navbar */
+.nav-link {
+    font-size: 1.1em;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Color del texto al pasar el mouse */
+.nav-link:hover {
+    color: #a4c639; /* Verde más claro para hover */
+    transform: translateY(-2px); /* Movimiento suave hacia arriba */
+}
+
+/* Subrayado animado en hover */
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #a4c639;
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Efecto de subrayado completo en hover */
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Botón del navbar en vista móvil */
+.navbar-toggler {
+    border-color: #fff;
+}
+
+/* Icono del navbar */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'%3E%3C/path%3E%3C/svg%3E");
+}
