@@ -1,7 +1,7 @@
-user_id,producto_id,compra,sexo,nombre_producto,precio,descripcion,imagen
-1,1001,1,Hombre,Afeitado Completo,20,Kit de afeitado premium,/img/afeitado.png
-2,1002,1,Mujer,Set de Maquillaje,45,Incluye sombras y labial,/img/maquillaje.png
-3,1003,1,Hombre,Loción para Hombre,30,Loción refrescante para hombre,/img/locion_hombre.png
-4,1004,1,Mujer,Crema Hidratante,35,Crema hidratante para la piel,/img/crema_hidratante.png
-5,1005,0,Hombre,Gel para Cabello,15,Gel de fijación fuerte para hombre,/img/gel_hombre.png
-6,1006,0,Mujer,Perfume Floral,60,Perfume con fragancia floral suave,/img/perfume_floral.png
+producto_id,sexo,imagen,descripcion,precio
+1,Hombre,/static/img/img1.png,Kit de afeitado premium,20
+2,Mujer,/img/maquillaje.png,Incluye sombras y labial,45
+3,Hombre,/img/locion_hombre.png,Loción refrescante para hombre,30
+4,Mujer,/img/crema_hidratante.png,Crema hidratante para la piel,35
+5,Hombre,/img/gel_hombre.png,Gel de fijación fuerte para hombre,15
+6,Mujer,/img/perfume_floral.png,Perfume con fragancia floral suave,60

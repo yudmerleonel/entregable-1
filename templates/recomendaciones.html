@@ -30,14 +30,14 @@
     <h1>Recomendaciones de Productos para {{ sexo }}</h1>
     
     <ul>
-        {% for producto in productos %}
-            <li>
-                <img src="{{ producto.imagen }}" alt="Imagen del producto" style="width:100px;height:100px;">
-                <p>ID del producto: {{ producto.producto_id }}</p>
-                <p>Descripción: {{ producto.descripcion }}</p>
-                <p>Precio: {{ producto.precio }}</p>
-            </li>
-        {% endfor %}
-    </ul>
+      {% for producto in productos %}
+          <li>
+              <img src="{{ producto.imagen }}" alt="Imagen del producto" style="width:100px;height:100px;">
+              <p>ID del producto: {{ producto.producto_id }}</p>
+              <p>Descripción: {{ producto.descripcion }}</p>
+              <p>Precio: {{ producto.precio }}</p>
+          </li>
+      {% endfor %}
+  </ul>
 </body>
 </html>
