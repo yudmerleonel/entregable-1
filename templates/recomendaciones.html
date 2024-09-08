@@ -31,7 +31,12 @@
     
     <ul>
         {% for producto in productos %}
-            <li>Producto ID: {{ producto }}</li>
+            <li>
+                <img src="{{ producto.imagen }}" alt="Imagen del producto" style="width:100px;height:100px;">
+                <p>ID del producto: {{ producto.producto_id }}</p>
+                <p>Descripción: {{ producto.descripcion }}</p>
+                <p>Precio: {{ producto.precio }}</p>
+            </li>
         {% endfor %}
     </ul>
 </body>

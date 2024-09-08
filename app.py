@@ -13,8 +13,9 @@ usuarios = pd.read_csv('usuarios.csv')
 # Función para recomendaciones basadas en sexo
 def recomendar_productos_por_sexo(sexo, n_recomendaciones=5):
     productos_sexo = ventas[ventas['sexo'] == sexo]
-    productos_populares = productos_sexo['producto_id'].value_counts().head(n_recomendaciones).index.tolist()
-    return productos_populares
+    productos_populares = productos_sexo.nlargest(n_recomendaciones, 'precio')  # Ordenar por precio si es necesario
+    return productos_populares[['producto_id', 'imagen', 'descripcion', 'precio']].to_dict(orient='records')
+
 
 # Página de inicio
 @app.route('/')
