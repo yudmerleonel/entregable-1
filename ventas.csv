@@ -1,7 +1,11 @@
 producto_id,sexo,imagen,descripcion,precio
 1,Hombre,/static/img/afeitador.jpg,Kit de afeitado premium,20
-2,Mujer,/img/maquillaje.png,Incluye sombras y labial,45
+2,Mujer,/static/img/maquillaje.jpg,Incluye sombras y labial,45
 3,Hombre,/static/img/perfume.jpg,Loción refrescante para hombre,30
-4,Mujer,/img/crema_hidratante.png,Crema hidratante para la piel,35
+4,Mujer,/static/img/crema.jpg,Crema hidratante para la piel,35
 5,Hombre,/static/img/gel.jpeg,Gel de fijación fuerte para hombre,15
-6,Mujer,/img/perfume_floral.png,Perfume con fragancia floral suave,60
+6,Mujer,/static/img/perfume_mujer.jpeg,Perfume con fragancia floral suave,60
+7,Hombre,/static/img/casaca.jpg,casaca de cuero motero,15
+8,Mujer,/static/img/vestido.jpeg,Perfume con fragancia floral suave,60
+9,Hombre,/static/img/pantalon.jpeg,Pantalon jeans,15
+10,Mujer,/static/img/tacos.jpeg,Perfume con fragancia floral suave,60

@@ -107,3 +107,155 @@
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'%3E%3C/path%3E%3C/svg%3E");
 }
+/* login*/
+/* Estilos del contenedor del formulario */
+.login-container {
+    max-width: 500px;
+    margin: 5% auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.login-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Título del formulario */
+.login-container h1 {
+    font-size: 2.5em;
+    color: #004d38;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.login-container h1:hover {
+    color: #003d30;
+}
+
+/* Estilo del grupo de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Estilo del input del formulario */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #004d38;
+    box-shadow: 0 0 5px rgba(0, 77, 55, 0.3);
+    outline: none;
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #004d38;
+    border-color: #004d38;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #003d30;
+    border-color: #003d30;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* registro */
+/* Estilos del contenedor del formulario */
+.register-container {
+    max-width: 500px;
+    margin: 5% auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.register-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Título del formulario */
+.register-container h1 {
+    font-size: 2.5em;
+    color: #004d38;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.register-container h1:hover {
+    color: #003d30;
+}
+
+/* Estilo del grupo de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Estilo del input y select del formulario */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #004d38;
+    box-shadow: 0 0 5px rgba(0, 77, 55, 0.3);
+    outline: none;
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #004d38;
+    border-color: #004d38;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #003d30;
+    border-color: #003d30;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

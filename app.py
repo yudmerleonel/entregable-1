@@ -9,7 +9,7 @@ ventas = pd.read_csv('ventas.csv')
 usuarios = pd.read_csv('usuarios.csv')
 
 # Función para recomendaciones basadas en sexo
-def recomendar_productos_por_sexo(sexo, n_recomendaciones=5):
+def recomendar_productos_por_sexo(sexo, n_recomendaciones=60):
     # Filtrar productos según el sexo
     productos_sexo = ventas[ventas['sexo'] == sexo]
     
@@ -79,7 +79,7 @@ def login():
 def recomendaciones():
     if 'user' in session:
         sexo = session['sexo']
-        productos = recomendar_productos_por_sexo(sexo, n_recomendaciones=50)  # Obtener hasta 50 recomendaciones
+        productos = recomendar_productos_por_sexo(sexo, n_recomendaciones=60)  # Obtener hasta 50 recomendaciones
         return render_template('recomendaciones.html', productos=productos, sexo=sexo)
     else:
         return redirect(url_for('login'))
