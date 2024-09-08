@@ -13,9 +13,8 @@ usuarios = pd.read_csv('usuarios.csv')
 # Función para recomendaciones basadas en sexo
 def recomendar_productos_por_sexo(sexo, n_recomendaciones=5):
     productos_sexo = ventas[ventas['sexo'] == sexo]
-    productos_populares = productos_sexo.nlargest(n_recomendaciones, 'precio')  # Ordenar por precio si es necesario
-    return productos_populares[['producto_id', 'imagen', 'descripcion', 'precio']].to_dict(orient='records')
-
+    productos_populares = productos_sexo['producto_id'].value_counts().head(n_recomendaciones).index.tolist()
+    return productos_populares
 
 # Página de inicio
 @app.route('/')
@@ -25,8 +24,6 @@ def index():
 # Registro de usuario
 @app.route('/registro', methods=['GET', 'POST'])
 def registro():
-    global usuarios  # Agregar esta línea para declarar la variable global
-
     if request.method == 'POST':
         nombre = request.form['nombre']
         email = request.form['email']
@@ -38,13 +35,12 @@ def registro():
             'sexo': [sexo]
         })
         
-        # Usar pd.concat en lugar de append
+        # Aquí se realiza el cambio: se usa pd.concat en lugar de append
         usuarios = pd.concat([usuarios, nuevo_usuario], ignore_index=True)
         
         # Guardar los cambios en el archivo CSV
         usuarios.to_csv('usuarios.csv', index=False)
         
-        # Guardar información del usuario en la sesión
         session['user'] = nombre
         session['sexo'] = sexo
         
@@ -55,8 +51,6 @@ def registro():
 # Login de usuario
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    global usuarios  # Agregar esta línea para declarar la variable global
-
     if request.method == 'POST':
         nombre = request.form['nombre']
         usuario = usuarios[usuarios['nombre'] == nombre]
