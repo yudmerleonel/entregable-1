@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Recomendaciones para {{ sexo }}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,17 +25,45 @@
           </ul>
         </div>
       </nav>
-    <h1>Recomendaciones de Productos para {{ sexo }}</h1>
-    
-    <ul>
-      {% for producto in productos %}
-          <li>
-              <img src="{{ producto.imagen }}" alt="Imagen del producto" style="width:100px;height:100px;">
-              <p>ID del producto: {{ producto.producto_id }}</p>
-              <p>Descripción: {{ producto.descripcion }}</p>
-              <p>Precio: {{ producto.precio }}</p>
-          </li>
-      {% endfor %}
-  </ul>
+      <h1 class="titulo-recomendaciones">Recomendaciones de Productos para {{ sexo }}</h1>
+      <ul class="lista-productos">
+          {% for producto in productos %}
+              <li class="item-producto">
+                  <img src="{{ producto.imagen }}" alt="Imagen del producto" class="imagen-producto">
+                  <div class="detalles-producto">
+                      <p class="producto-id">ID del producto: {{ producto.producto_id }}</p>
+                      <p class="producto-descripcion">Descripción: {{ producto.descripcion }}</p>
+                      <p class="producto-precio">Precio: {{ producto.precio }}</p>
+                  </div>
+              </li>
+          {% endfor %}
+      </ul>
+      <section>
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #004d38; width: 100%; padding: 20px 0;">
+          <!-- Grid container -->
+          <div class="p-4 pb-0">
+            <!-- Section: CTA -->
+            <section>
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Regístrate gratis</span>
+                <button type="button" class="btn btn-outline-light btn-rounded">
+                  ¡Únete ahora!
+                </button>
+              </p>
+            </section>
+            <!-- Section: CTA -->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); width: 100%;">
+            © 2024 Copyright:
+            <a class="text-white" href="https://sagafalabella.com/">sagafalabella.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
 </body>
 </html>

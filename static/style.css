@@ -1,0 +1,59 @@
+/* Estilos para el título */
+.titulo-recomendaciones {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista */
+.lista-productos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos para cada item del producto */
+.item-producto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Animación al pasar el mouse */
+.item-producto:hover {
+    transform: translateX(10px); /* Mueve hacia la derecha */
+}
+
+/* Estilos para la imagen del producto */
+.imagen-producto {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los detalles del producto */
+.detalles-producto {
+    text-align: left;
+}
+
+/* Estilos para los textos */
+.producto-id,
+.producto-descripcion,
+.producto-precio {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
